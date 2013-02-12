@@ -696,7 +696,7 @@ Posted on <a href="{Permalink}" title="{12Hour}:{Minutes} {AmPm}" rel="bookmark"
 
             {block:Quote}
             <!-- Quote -->
-                "{Quote}"
+                <blockquote>{Quote}</blockquote>
 
                 {block:Source}
                     <div class="source">{Source}</div>
@@ -753,6 +753,13 @@ Posted on <a href="{Permalink}" title="{12Hour}:{Minutes} {AmPm}" rel="bookmark"
                 {/block:Caption}
                 
             {/block:Audio}
+
+            {block:Answer}
+                <div class="asker">{Asker} asked:</div>
+                <div class="question">{Question}</div>
+
+                <div class="answer">{Answer}</div>
+            {/block:Answer}
 
 <footer class="entry-meta">
                     
