@@ -16,6 +16,7 @@
 <!-- Tumblr Options -->
 <meta name="text:Custom JavaScript" content=""/>
 <meta name="image:Background Image" content=""/>
+<meta name="if:Stretch Background" content="0"/>
 
 <!-- BEGIN original _s style.css -->
 <style>
@@ -586,7 +587,14 @@ object {
 <style>
 
 body {
-    background: url( '{image:Background Image}' );
+    background-image: url( '{image:Background Image}' );
+    
+    {block:IfStretchBackground}
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    {/block:IfStretchBackground}
+    
 }
 
 #page {
